@@ -1,0 +1,10 @@
+{
+    "name": "Homebase",
+    "description": "Provides a productive center to your workflow.",
+    "version": "1.0",
+    "permissions": ["storage"],
+    "manifest_version": 3,
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    }
+}
