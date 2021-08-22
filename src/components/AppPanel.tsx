@@ -267,8 +267,7 @@ const AppPanel = (props: { setPath: Function; setArticles: Function }) => {
             {
                 icon: ExternalLinkIcon,
                 name: 'Open',
-                method: () =>
-                    window.open(selected.item.href, '_blank', 'noreferrer'),
+                method: () => window.location.assign(selected.item.href),
             },
             {
                 icon: PencilIcon,

@@ -37,7 +37,7 @@ const File = (props: {
         setContextMenuType()
     }
     const handleDoubleClick = () =>
-        window.open(props.item.href, '_blank', 'noreferrer')
+        window.location.assign(props.item.href as string)
     const handleKeyPress = (e: KeyboardEvent) => {
         if (
             selected?.item?.id === props.item.id &&
