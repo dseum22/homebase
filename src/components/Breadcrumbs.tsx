@@ -7,7 +7,7 @@ const Breadcrumbs = (props: { setPath: Function }) => {
     const articles = useContext(ArticlesContext)
     const children: JSX.Element[] = [
         <button
-            className="rounded py-1 px-2 hover:bg-gray-100 transition-colors duration-200"
+            className="rounded py-1 px-2 hover:bg-gray-100 transition-colors duration-200 text-xl"
             onClick={() => props.setPath([])}
         >
             ROOT
@@ -17,7 +17,7 @@ const Breadcrumbs = (props: { setPath: Function }) => {
         children.push(
             <ChevronRightIcon className="h-4 w-4 mx-2 flex-shrink-0" />,
             <button
-                className="rounded py-1 px-2 hover:bg-gray-100 transition-colors duration-200 uppercase"
+                className="rounded py-1 px-2 hover:bg-gray-100 transition-colors duration-200 uppercase text-xl"
                 onClick={() => props.setPath(path.slice(0, index + 1))}
             >
                 {articles[value]}
